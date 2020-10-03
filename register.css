@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: azure;
+    background-size: cover;
+    border: #000000;
+    box-sizing: border-box;
+    
+}
+
+h2{
+    text-align: center;
+    text-size-adjust: 12px;
+    color: blue;
+}
