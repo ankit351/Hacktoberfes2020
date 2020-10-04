@@ -14,9 +14,9 @@
 
 
 ## Hacktoberfest2020
-Happy Hacktober! :octocat: This is a beginner friendly repository made specifically for Hacktoberfest that helps you get your first PR and takes you a step closer to earning your Hacktoberfest T-shirt 👕.
+Happy October! :October: This is a beginner-friendly repository made specifically for Hacktoberfest that helps you get your first PR and takes you a step closer to earning your Hacktoberfest T-shirt 👕.
 
-🎯 If you are a beginner, and looking for your first contribution, we are here to help. Just append your name and jobs on our
+🎯 If you are a beginner and looking for your first contribution, we are here to help. Just append your name and jobs on our
 ###### <a href="https://github.com/gawangnich/HacktoberFest2020/blob/master/contributor.md" target="blank">https://github.com/gawangnich/HacktoberFest2020/blob/master/contributor.md</a> and that counts as your first PR.
 
 🎯 In case you are an intermediate or advanced level programmer or developer, we have got you covered too!! Step to our <a href="https://github.com/gawangnich/HacktoberFest2020/tree/master/Resources" target="blank"> Resources folder</a> and make contributions as per as your interests.
@@ -35,7 +35,7 @@ Happy Hacktober! :octocat: This is a beginner friendly repository made specifica
 ### 2. Star and Fork this Repository
 ###### You can star ⭐ and fork 🍽️ this repository on GitHub by navigating at the top of this repository.
 
-###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, GawangNich is the owner of the hacktoberfest repository, so the GitHub URL for this project is: 
+###### GitHub repository URLs will reference both the username associated with the owner of the repository, as well as the repository name. For example, GawangNich is the owner of the Oktoberfest repository, so the GitHub URL for this project is: 
 
 <a href="https://github.com/gawangnich/HacktoberFest2020" target="blank">https://github.com/gawangnich/HacktoberFest2020</a>
 
@@ -43,7 +43,7 @@ Happy Hacktober! :octocat: This is a beginner friendly repository made specifica
 
 ### 3. Clone the Repository
 
-###### To make your own local copy of the repository you would like to contribute to, let’s first open up a terminal window.
+###### To make your local copy of the repository you would like to contribute to, let’s first open up a terminal window.
 
 ###### We’ll use the `git clone`  command along with the URL that points to your fork of the repository.
 
@@ -80,10 +80,10 @@ https://github.com/your-username/hacktoberfest19.git
 
 ###### At this point, you are ready to make a pull request to the original repository.
 
-###### Now navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page.
+###### Now navigate to your forked repository and press the “New pull request” button on your left-hand side of the page.
 
-## Hurray!!! You just got closer to completing your hacktoberfest challenge. 😃   
-NOTE :  organise community hacktober participation!
+## Hurray!!! You just got closer to completing your Oktoberfest challenge. 😃   
+NOTE: organize community Hacktober participation!
 
 ## Happy?? Star ⭐ this Repo. 🤩
 
