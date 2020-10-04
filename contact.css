@@ -1,0 +1,13 @@
+*{
+    background-color: antiquewhite;
+    background: antiquewhite;
+    background-attachment: fixed;
+    position: relative;
+    max-resolution: 1;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    text-decoration: aqua;
+}
