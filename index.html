@@ -1,108 +1,321 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta name="viewport" content="width=device, initial-scale=1.0">
-	<title>Travelku</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>HACKTOBERFEST 2020</title>
+
+    <style media="screen">
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: white;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+            letter-spacing: 0.5px;
+            padding-top: 25px;
+            font-family: 'Roboto Mono', monospace;
+            background: rgb(21, 34, 70);
+            background: linear-gradient(180deg, rgba(21, 34, 70, 1) 0%, rgba(28, 43, 77, 1) 20%, rgba(161, 30, 198, 1) 100%);
+        }
+        
+        p {
+            margin-right: 30px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+            margin: 20px;
+            position: relative;
+            margin-bottom: 50px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 10px 10px 100px 0.5px rgba(244, 244, 244, 1);
+        }
+        
+        .card:hover {
+            box-shadow: none;
+            margin-bottom: 54px;
+        }
+        
+        .image img {
+            width: 20%;
+        }
+        
+        .text {
+            background: #fff;
+            padding: 20px;
+            min-height: 200px;
+        }
+        
+        .text p {
+            margin-bottom: 0px;
+        }
+        
+        .fab {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: -50px;
+            right: 20px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            background: #0066a2;
+            -webkit-transition: -webkit-transform 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .fab:hover {
+            background: #549d3c;
+            cursor: pointer;
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        
+        .card {
+            width: 80%;
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        .link {
+            color: #58B4FF;
+        }
+        
+        .link a {
+            text-decoration: none !important;
+            color: #fff;
+        }
+        
+        .names {
+            margin-top: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .names a {
+            text-decoration: bold;
+        }
+        
+        .footerdiv {
+            background-color: #152246;
+            margin-top: 50px;
+        }
+        
+        .footerdiv p {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: white;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+            letter-spacing: 0.4px;
+            padding-top: 25px;
+            font-family: 'Roboto Mono', monospace;
+            background: rgb(21, 34, 70);
+            background: linear-gradient(180deg, rgba(21, 34, 70, 1) 0%, rgba(28, 43, 77, 1) 20%, rgba(161, 30, 198, 1) 100%);
+        }
+        
+        p {
+            margin-right: 30px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+            margin: 20px;
+            position: relative;
+            margin-bottom: 50px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 10px 10px 100px 0.5px rgba(244, 244, 244, 1);
+        }
+        
+        .card:hover {
+            box-shadow: none;
+            margin-bottom: 54px;
+        }
+        
+        .image img {
+            width: 20%;
+        }
+        
+        .text {
+            background: #fff;
+            padding: 20px;
+            min-height: 200px;
+        }
+        
+        .text p {
+            margin-bottom: 0px;
+        }
+        
+        .fab {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: -50px;
+            right: 20px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            background: #0066a2;
+            -webkit-transition: -webkit-transform 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .fab:hover {
+            background: #549d3c;
+            cursor: pointer;
+            -ms-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        
+        .card {
+            width: 7%;
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        .link {
+            color: #58B4FF;
+        }
+        
+        .link a {
+            text-decoration: none !important;
+            color: #fff;
+        }
+        
+        .names {
+            margin-top: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .names a {
+            text-decoration: bold;
+        }
+        
+        .footerdiv {
+            background-color: #152246;
+            margin-top: 50px;
+        }
+        
+        .footerdiv p {
+            padding: 12px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
+    <img src="images/ykLQzTnJ_400x400-removebg-preview.png" style="width: 500px; float: left;">
+    <h1 style="font-size: 55px">Hacktoberfest 2020 🎃</h1>
+    <div>
+        <p>
+            Happy Hacktober! This is a beginner friendly repository made specifically for Hacktoberfest that helps you get your first PR and takes you a step closer to earning your Hacktoberfest T-shirt 👕.
+        </p>
+        <p>
+            🎯 If you are a beginner, and looking for your first contribution, we are here to help. Just append your name and jobs on our
+        </p>
+        <p>
+            https://github.com/gawangnich/HacktoberFest2020/blob/master/contributor.md and that counts as your first PR.
+        </p>
+        <p>
+            🎯 In case you are an intermediate or advanced level programmer or developer, we have got you covered too!! Step to our Resources folder and make contributions as per as your interests.
+        </p>
+        <p>
+            💻 Also, our website is open to contributions from both frontend and designer fellows who want to help us in making it bigger and better. Check Contributor at: <a class="link" href="https://gawangnich.github.io/HacktoberFest2020/">https://gawangnich.github.io/HacktoberFest2020/</a>
+        </p>
+        <p>
+            Happy Hacktober! This is a beginner friendly repository made specifically for Hacktoberfest that helps you get your first PR and takes you a step closer to earning your <b>Hacktoberfest T-shirt 👕</b>.
+        </p>
+        <p>
+            🎯 If you are a beginner, and looking for your first contribution, we are here to help. Just append your name and jobs on our
+        </p>
+        <p>
+            https://github.com/gawangnich/HacktoberFest2020/blob/master/contributor.md and that counts as your first PR.
+        </p>
+        <p>
+            🎯 In case you are an intermediate or advanced level programmer or developer, we have got you covered too!! Step to our Resources folder and make contributions as per as your interests.
+        </p>
+        <p>
+            💻 Also, our website is open to contributions from both frontend and designer fellows who want to help us in making it bigger and better. Check Contributor at: <a class="link" href="https://gawangnich.github.io/HacktoberFest2020/">https://gawangnich.github.io/HacktoberFest2020/</a>
+        </p>
+    </div>
+    <h3 style="text-align: center;color: white; margin-top: 150px; font-size: 35px">Contributors</h3>
 
-	<section class="header">
-		<a href="#" class="logo"><h2>Travelku</h2></a>
-		<div class="toggle"><img src="img/toggle.png"></dir>
-	</section>
+    <div style="margin-top: 50px;" class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2">
+                <div class="card">
+                    <div class="image" id="imaget"></div>
+                </div>
+            </div>
+            <div style="margin-top: 55px;" class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2">
+                        <div class="card">
+                            <div class="image" id="imaget"></div>
+                        </div>
+                    </div>
+                </div>
 
-	<section class="banner">
-		<img src="img/bg.jpg" class="fitBg">
-		<div class="content">
-			<h2>Explore The World</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			
-			<a href="#about" class="btn">Learn More</a>
-	</section>
+                <br>
 
-	<section class="about" id="about">
-		<div class="contentBx">
-			<h2 class="titleText">Fell The Beuty Of The World</h2>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></br>Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<a href="#Popular" class="btn">Popular Destination</a>
-		</div>
-		<div class="imgBx">
-			<img src="img/img1.jpg" class="fitBg">
-		</div>
-	</section>
+                <div class="footerdiv">
+                    <p>Thanks <a class="link" href="https://github.com/gawangnich">gawangnich</a> for this repo!</p>
+                    <p>Made with <span style="color:#f00;">&hearts;</span> & &lt;/&gt; on GitHub</p>
+                </div>
+                <script>
+                    async function get() {
+                        const res = await fetch(
+                            'https://api.github.com/repos/gawangnich/HacktoberFest2020/contributors',
+                        );
+                        const data = await res.json();
+                        console.log(data);
 
-	<section class="banner2">
-		<img src="img/banner2.jpg"  class="fitBg">
-	</section>
+                        let img = document.getElementById('imaget');
+                        let divNames = document.querySelector('.names');
+                        let linkRepo = document.querySelector('.link_repositories');
 
-	<section class="destination" id="Popular">
-		<div class="content">
-			<h2 class="titleText">Most Popular Travel in the world</h2>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
+                        for (let i = 0; i < data.length; i++) {
+                            let listName = '';
+                            let listImg = '';
 
-		<div class="destinationList">
-			<div class="box">
-				<div class="imgBx">
-					<img src="img/destination1.jpg" class="fitBg">
-				</div>
-				<div class="content">
-					<h2>Monas, Jakarta<br><span>Indonesia</span></h2>
-				</div>
-			</div>
+                            let listData = data[i];
+                            let {
+                                login: user,
+                                avatar_url: imgUser
+                            } = listData;
 
-			<div class="box">
-				<div class="imgBx">
-					<img src="img/destination2.jpg" class="fitBg">
-				</div>
-				<div class="content">
-					<h2>Merlion, Singapore<br><span>Singapore</span></h2>
-				</div>
-			</div>
-
-			<div class="box">
-				<div class="imgBx">
-					<img src="img/destination3.jpg" class="fitBg">
-				</div>
-				<div class="content">
-					<h2>Burj Khalifa, Dubai<br><span>Emirat Arab</span></h2>
-				</div>
-			</div>
-		</div>
-		<a href="#" class="btn">View More</a>
-	</section>
-
-	<section class="banner3">
-		<img src="img/banner3.jpg" class="fitBg">
-	</section>
-
-	<section class="footer">
-		<ul class="sci">
-			<li><a href="#"><img src="img/fb.png"></li>
-			<li><a href="#"><img src="img/medium.png"></li>
-			<li><a href="#"><img src="img/linkedin.png"></li>
-		</ul>
-
-		<a href="#" class="CopyrightText">Copyrights @2020 Bagas Makhali</a>
-
-	</section>
+                            listName += `<h3>${user}</h3>"`;
+                            listImg += `<a href="https://github.com/${user}" ><img src="${imgUser}"></a>`;
+                            img.innerHTML += listImg;
+                        }
+                    }
+                    window.onload = get();
+                </script>
 </body>
+
 </html>
